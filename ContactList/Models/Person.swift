@@ -19,7 +19,7 @@ struct Person {
         let data = DataStore()
         var persons: [Person] = []
         
-        let firstNames = Array(Set(data.firstNames))
+        let firstNames = data.firstNames.shuffled()
         let lastNames = data.lastNames.shuffled()
         let phones = data.phones.shuffled()
         let mails = data.mails.shuffled()
